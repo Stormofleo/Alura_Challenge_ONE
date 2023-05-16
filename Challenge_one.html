@@ -1,0 +1,38 @@
+<html lang="es">
+    <head>
+
+        <meta charset="Utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador de Texto</title>
+    </head>
+    <body style="margin: 0 auto; ">
+        <header>
+            <div>
+                <p class="logo">L</p>
+            </div>
+        </header>
+        <main>
+            <section>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese Texto aqui"></textarea>
+                <div>
+                    <h6 class="informacion">Solo letras sin minusculas ni acentos</h6>
+                </div>
+                <div>
+                    <button class="btn encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <textarea class="mensaje" cols="20" rows="10"> </textarea>
+                <div>
+                    <button class="btn copiar" onclick="btnCopiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copy right Loe</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
