@@ -1,63 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
 
 *{
-    background: #e7faec;
-}
-.logo{
-    font-family: 'Merriweather', serif;
-    padding: 10px 0 0 10px;
-    font-size: 60px;
-    color: #0a7143;
-}
-main{
-    display: flex;
-    margin: 0 0 10px 180px;
+    padding: 0px;
+    margin: 0px;
+    
 }
 
+body{
+    background: #e7faec;
+    margin: 10px 0 0 0;
+}
+
+
+.logo{
+    padding: 10px 0 0 0;
+}
+
+.flex-container{
+    display: flex;
+    margin: 20px 50px 0 30px;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    min-width: 250px;
+    margin: 25px;
+}
+.in-flex:first-child{
+    flex: 2;
+}
+.in-flex:nth-child(2){
+    background: rgba(255,255,255,0.8) ;
+    border-radius: 15px;
+    border: rgba(255,255,255,0.8) ;
+}
+
+
 .text-area{
+    font-family: 'Merriweather', serif;
     resize: none;
     height: 400px;
+    width: 100%;
     border: none;
     background: none;
     text-transform: lowercase;
     color: #0a7143;
+    font-size: 32px;
 }
 ::placeholder{color: #0a7143;}
     .text-area:focus{
         outline: none;
     }
 
+.informacion{
+    display: inline-block;
+    color: grey;
+    font-size: 18px;
+}
 .mensaje{
+    color: #0a7143;
+    font-family: 'Merriweather', serif;
     resize: none;
-    margin: 20px 0 0 100px;
     height: 400px;
-    border-radius: 10px;
+    width: 100%;
+    font-size: 24px;
     border: none;
+    border-radius: 15px;
     background: rgba(255,255,255,0.8) ;
+    background-image: url(Imagenes/Muñeco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .mensaje:focus{
     outline: none;
 }
 
-.btn{
-    padding: 2px 10px 2px 10px;
-    font-size: 16px;
-    border-radius: 10px;
-    font-family: 'Merriweather', serif;
+.btn-area{
+    flex: 1;
     
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.btn.encriptar{
-    color: #98f6cc;
-    background-color: #085f38;
-    
+.btn{
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+    color: white;
+    background-color: #3a8d68;
+    padding: 4px;
+    display: inline-block;
 }
-.btn.desencriptar{
-    color: #085f38;
-    background-color: #98f6cc;
-   
+.btn:hover{
+    cursor: pointer;
+    border-color: #710a38;
 }
-.btn.copiar{
-    color: #98f6cc;
-    background-color: rgba(255,255,255,0.8);
+
+.copiar{
+    display: none;
 }
+
+
+
+
+
+  

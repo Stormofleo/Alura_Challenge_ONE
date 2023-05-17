@@ -12,11 +12,18 @@ La letra "u" es convertida para "ufat"  */
 function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value);
     mensaje.value = textoEncriptado;
+    textArea.value = "";
+    mensaje.style.backgroundImage = "none";
+    document.querySelector(".copiar").style.display = 'block';
+
 }
 
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(textArea.value);
     mensaje.value = textoDesencriptado;
+    textArea.value = "";
+    mensaje.style.backgroundImage = "none";
+    document.querySelector(".copiar").style.display = 'block'; 
 }
 
 function btnCopiar(){
@@ -28,6 +35,13 @@ function btnCopiar(){
     navigator.clipboard.writeText(copyText.value);
 
 }
+
+var frase = document.querySelector(".frase");
+		frase.focus();
+		frase.addEventListener("input", function() {
+			this.style.height = "auto";
+			this.style.height = (this.scrollHeight) + "px";
+		});
 
 function encriptar (stringEcriptado){
     let  matrizCodigo = [["e","enter"],["i","imes"],["a","ai"],["o","ober"],["u","ufat"]];
